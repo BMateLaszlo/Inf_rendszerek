@@ -1,1 +1,1 @@
-# Inf_rendszerek
+# Informatikai rendszerek epietese C. tantargy alairaspotlo
