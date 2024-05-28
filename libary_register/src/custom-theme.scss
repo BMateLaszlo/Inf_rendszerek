@@ -1,0 +1,27 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+
+
+@include mat.core();
+
+$libary-register-primary: mat.define-palette(mat.$indigo-palette);
+$libary-register-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+
+$libary-register-warn: mat.define-palette(mat.$red-palette);
+
+$libary-register-theme: mat.define-light-theme((
+  color: (
+    primary: $libary-register-primary,
+    accent: $libary-register-accent,
+    warn: $libary-register-warn,
+  ),
+  typography: mat.define-typography-config(),
+  density: 0
+));
+
+
+@include mat.all-component-themes($libary-register-theme);
+
